@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HotPepperApi</string>
+    <string name="search">検索</string>
+    <string name="s">not</string>
+</resources>
