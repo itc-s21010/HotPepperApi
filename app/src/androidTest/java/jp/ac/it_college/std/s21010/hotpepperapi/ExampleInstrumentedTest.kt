@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s21010.WikiPediaApi
+package jp.ac.it_college.std.s21010.hotpepperapi
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.example.wikiclient.ui.model.Article
-import jp.ac.it_college.std.s21010.WikiPediaApi.databinding.ItemArticleBinding
+import jp.ac.it_college.std.s21010.hotpepperapi.databinding.ItemArticleBinding
 
 class ArticleListAdapter : ListAdapter<Article, ArticleViewHolder>(ArticleDiffUtil()) {
 

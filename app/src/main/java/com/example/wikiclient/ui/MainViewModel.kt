@@ -17,7 +17,6 @@ class MainViewModel(
     private val repository: WikiRepository = WikiRepositoryImpl()
 ) : ViewModel() {
 
-    // 取得したデータを別クラスに通知するためのクラス
     private val _articles = MutableStateFlow<List<Article>>(emptyList())
     val articles: StateFlow<List<Article>> = _articles
 
@@ -29,17 +28,14 @@ class MainViewModel(
             runCatching {
                 repository.getArticles(keyword, limit)
             }.onSuccess { response ->
-                // データ取得成功時
                 if (response != null) postArticles(response)
             }.onFailure {
-                // データ取得失敗時
                 Log.e("Fetch Failure", it.toString())
             }
         }
     }
 
 
-    // 取得したデータをMainActivityに通知する
     private fun postArticles(response: GetArticlesResponse) {
         _articles.value = response.query.pages.map {
             Article(

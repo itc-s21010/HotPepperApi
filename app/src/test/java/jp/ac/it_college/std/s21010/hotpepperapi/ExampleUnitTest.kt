@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s21010.WikiPediaApi
+package jp.ac.it_college.std.s21010.hotpepperapi
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s21010.WikiPediaApi
+package jp.ac.it_college.std.s21010.hotpepperapi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.wikiclient.ui.ArticleListAdapter
 import com.example.wikiclient.ui.MainViewModel
 import com.example.wikiclient.ui.model.Article
-import jp.ac.it_college.std.s21010.WikiPediaApi.databinding.ActivityMainBinding
+import jp.ac.it_college.std.s21010.hotpepperapi.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
